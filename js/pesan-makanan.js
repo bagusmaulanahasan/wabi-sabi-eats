@@ -130,7 +130,7 @@
 
 
 // Import the japaneseFoodList from products.js
-import { japaneseFoodList } from "./data/products.js";
+import { japaneseFoodList } from "../data/products.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     // ? Ambil daftar makanan dan qty dari localStorage

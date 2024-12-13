@@ -412,7 +412,7 @@ section .title {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-#isi-keranjang button {
+.form-pembayaran button , .checkout button{
     padding: 10px 20px;
     background-color: #007BCA;
     color: #fff;
@@ -424,12 +424,12 @@ section .title {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-#isi-keranjang button:hover {
+.form-pembayaran button:hover, .checkout button:hover{
     background-color: #005fa3;
     scale: 1.02;
     cursor: pointer;
 }
-#isi-keranjang button:active {
+.form-pembayaran button:active, .checkout button:active {
     background-color: #003c61;
     scale: 1.02;
     cursor: pointer;

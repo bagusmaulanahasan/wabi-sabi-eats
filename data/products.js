@@ -1,7 +1,7 @@
 export const japaneseFoodList = [
     {
         id: 1,
-        gambar: "../../assets/images/sushi-fish.jpg",
+        gambar: "../images/sushi-fish.jpg",
         nama: "Sushi",
         deskripsiSingkat: "Hidangan ikan mentah segar di atas nasi cuka.",
         deskripsiDetail:
@@ -11,7 +11,7 @@ export const japaneseFoodList = [
     },
     {
         id: 2,
-        gambar: "../../assets/images/ramen.jpg",
+        gambar: "../images/ramen.jpg",
         nama: "Ramen",
         deskripsiSingkat: "Sup mie Jepang dengan kuah dan berbagai topping.",
         deskripsiDetail:
@@ -21,7 +21,7 @@ export const japaneseFoodList = [
     },
     {
         id: 3,
-        gambar: "../../assets/images/okonomiyaki.webp",
+        gambar: "../images/okonomiyaki.webp",
         nama: "Okonomiyaki",
         deskripsiSingkat: "Pancake Jepang dengan topping sesuai selera.",
         deskripsiDetail:
@@ -31,7 +31,7 @@ export const japaneseFoodList = [
     },
     {
         id: 4,
-        gambar: "../../assets/images/takoyaki.jpg",
+        gambar: "../images/takoyaki.jpg",
         nama: "Takoyaki",
         deskripsiSingkat: "Bola adonan berisi potongan gurita yang digoreng.",
         deskripsiDetail:
@@ -41,7 +41,7 @@ export const japaneseFoodList = [
     },
     {
         id: 5,
-        gambar: "../../assets/images/matcha-ice-cream.jpg",
+        gambar: "../images/matcha-ice-cream.jpg",
         nama: "Matcha Ice",
         deskripsiSingkat: "Es krim rasa teh hijau khas Jepang.",
         deskripsiDetail:
@@ -51,7 +51,7 @@ export const japaneseFoodList = [
     },
     {
         id: 6,
-        gambar: "../../assets/images/onigiri.jpg",
+        gambar: "../images/onigiri.jpg",
         nama: "Onigiri",
         deskripsiSingkat: "Bola nasi isi dengan nori sebagai pembungkus.",
         deskripsiDetail:
@@ -61,7 +61,7 @@ export const japaneseFoodList = [
     },
     {
         id: 7,
-        gambar: "../../assets/images/tempura.jpg",
+        gambar: "../images/tempura.jpg",
         nama: "Tempura",
         deskripsiSingkat:
             "Gorengan seafood atau sayuran yang ringan dan renyah.",
@@ -72,7 +72,7 @@ export const japaneseFoodList = [
     },
     {
         id: 8,
-        gambar: "../../assets/images/gyoza.webp",
+        gambar: "../images/gyoza.webp",
         nama: "Gyoza",
         deskripsiSingkat:
             "Pangsit goreng atau kukus dengan isian daging cincang.",
@@ -83,7 +83,7 @@ export const japaneseFoodList = [
     },
     {
         id: 9,
-        gambar: "../../assets/images/dorayaki.jpg",
+        gambar: "../images/dorayaki.jpg",
         nama: "Dorayaki",
         deskripsiSingkat: "Kue pancake Jepang dengan isian kacang merah manis.",
         deskripsiDetail:

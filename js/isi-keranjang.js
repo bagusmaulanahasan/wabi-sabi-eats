@@ -142,7 +142,7 @@
 
 
 // Import the japaneseFoodList from products.js
-import { japaneseFoodList } from "./data/products.js";
+import { japaneseFoodList } from "../data/products.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     // ? Ambil daftar makanan dan qty dari localStorage
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const container = document.querySelector(".form-pembayaran").parentElement;
         container.innerHTML = `
             <p>Silahkan scan dan screenshot bukti pembayaran anda</p>
-            <img src="../../assets/images/qris.jpeg" alt="qris" class="qris">
+            <img src="../images/qris.jpeg" alt="qris" class="qris">
             <hr>
             <h2>Data Penerima</h2>
             <div class="detail-penerima">

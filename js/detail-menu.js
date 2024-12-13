@@ -1,5 +1,5 @@
 // Import the japaneseFoodList from products.js
-import { japaneseFoodList } from "./data/products.js";
+import { japaneseFoodList } from "../data/products.js";
 
 function renderFoodList() {
     const list = document.querySelector(".menu-lengkap");
@@ -21,7 +21,7 @@ function renderFoodList() {
                         <a href="">Baca Selengkapnya →</a>
                     </div>
                 </div>
-                <img src="../../assets/images/${food.gambar}" alt="">
+                <img src="../images/${food.gambar}" alt="">
             </div>
         `;
         // ? Menambahkan elemen makanan ke dalam container
