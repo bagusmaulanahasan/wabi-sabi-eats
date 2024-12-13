@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wabi Sabi Eats</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="index.html#hidangan-unggulan">Menu Unggulan</a>
+                    </li>
+                    <li><a href="detail-menu.html">Detail Menu</a></li>
+                    <li><a href="./pesan-makanan.html">Pesan Makanan</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="keranjang">
+                    <img
+                        width="24"
+                        height="24"
+                        src="https://img.icons8.com/ios/50/shopping-cart--v1.png"
+                        alt="shopping-cart--v1"
+                    />
+                    <div class="qty">0</div>
+                </div>
+            </nav>
+        </header>
+        <section id="menu">
+            <h2 class="title">Menu Lengkap Hidangan Khas Jepang</h2>
+            <div class="menu-lengkap"></div>
+        </section>
+
+        <section id="isi-keranjang">
+            <h2>keranjang Belanja</h2>
+            <div class="list-keranjang"></div>  
+            <hr>
+            <div class="total-belanja"></div>
+            <hr>
+            <div class="checkout"></div>
+        </section>
+        
+        <footer>
+            <hr />
+            <p>
+                &copy; 2024 Wabi Sabi Eats by Bagus Maulana | Menghargai
+                keindahan dalam kesederhanaan rasa Jepang
+            </p>
+        </footer>
+        <script type="module" src="../isi-keranjang.js"></script>
+        <script src="../script.js"></script>
+        <script type="module" src="../detail-menu.js"></script>
+    </body>
+</html>
