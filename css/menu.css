@@ -1,0 +1,25 @@
+#menu images {
+    /* position: relative; */
+    background-color: rebeccapurple;
+}
+#menu img {
+    width: 400px;
+    /* position: fixed; */
+    margin-top: 2em;
+}
+.menu-sushi {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+}
+.detail-produk-menu {
+    width: 700px;
+    height: 70vh;
+    padding-right: 2em;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+}
+.detail-produk-menu p {
+    text-indent: 20px;
+}

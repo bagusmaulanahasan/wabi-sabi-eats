@@ -18,7 +18,7 @@ function renderFoodList() {
                     <p class="deskripsi-menu">${food.deskripsiSingkat}</p>
                     <div class="detail-menu">
                         <hr>
-                        <a href="">Baca Selengkapnya →</a>
+                        <a href=./menu/${(food.nama).replace(" ", "-").toLocaleLowerCase()}.html>Baca Selengkapnya →</a>
                     </div>
                 </div>
                 <img src="../images/${food.gambar}" alt="">

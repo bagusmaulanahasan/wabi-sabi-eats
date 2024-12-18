@@ -197,8 +197,53 @@ nav .keranjang {
     width: 8em;
 }
 
+/* locatio Section */
+#location {
+    padding: 1em 0 5em 0;
+}
+#location h2 {
+    margin: 3em 0;
+    text-align: center;
+}
+#location .title-description {
+    margin-bottom: 2em;
+}
+#location .maps-description img {
+    width: 178px;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+    animation: motor infinite  3s ease;
+    -webkit-animation: motor infinite  3s ease-in-out;
+    -webkit-filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#location .maps-description marquee {
+    padding: 10px;
+}
+#location .maps {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+}
+#location .maps-description {
+    width: 500px;
+    text-align: justify;
+}
+@keyframes motor {
+    0%, 100% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: -10deg;
+    }
+}
+#location .maps-description {
+    animation: maps 2s ease;
+    -webkit-animation: maps 2s ease;
+}
+
 
 #menu-lain {
+    margin-top: 3em;
     text-align: center;
     padding: 20px;
     background-color: #f2f2f2;
@@ -300,6 +345,21 @@ section .title {
 .detail-menu a:hover {
     color: #2563eb;
 }
+
+.detail-menu-unggulan {
+    margin-bottom: 1em;
+}
+.detail-menu-unggulan a{
+    color: #fff;
+    width: 100%;
+    padding: 1em;
+    display: inline-block;
+}
+.detail-menu-unggulan a:hover {
+    background-color: #fff;
+    color: #2563eb;
+}
+
 
 /* ISI KERANJANG BELANJA */
 #isi-keranjang {
