@@ -88,6 +88,7 @@ nav .keranjang {
     align-items: center;
     justify-content: space-around;
     height: 100vh;
+    flex-wrap: wrap;
 }
 .hero-section .heroImg1{
     width: 400px;
@@ -223,6 +224,7 @@ nav .keranjang {
     gap: 4em;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 #location .maps-description {
     width: 500px;

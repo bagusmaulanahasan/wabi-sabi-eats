@@ -1,0 +1,25 @@
+#sites-maps {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 2em 0;
+}
+#sites-maps ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+#sites-maps li {
+    list-style-type: none;
+}
+#sites-maps a {
+    color: #fff;
+}
+#sites-maps .products {
+    display: flex;
+    flex-wrap: wrap
+}
+#sites-maps .product-list {
+    text-align: left;
+}

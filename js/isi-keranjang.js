@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ? Render isi keranjang
     renderIsiKeranjang(dataKeranjang);
 
-    // ? Render total belanja
+    // ? Render total belanjak
     renderTotalBelanja(dataKeranjang);
 });
 

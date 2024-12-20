@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 768px) {
+    .hero-section .box-gambar {
+        width: 100%;
+        display: none;
+    }
+    .box-gambar img {
+        width: 50px;
+        height: 100px;
+    }
+}
