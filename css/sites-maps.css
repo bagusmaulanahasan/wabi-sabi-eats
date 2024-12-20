@@ -29,3 +29,15 @@
 #sites-maps .product-list {
     text-align: left;
 }
+
+#anchor img{
+    position: fixed;
+    bottom: 1em;
+    right: 3em;
+    width: 6em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
