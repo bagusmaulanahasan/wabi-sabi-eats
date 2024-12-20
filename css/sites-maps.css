@@ -1,3 +1,9 @@
+#video-index{
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+}
+
 #sites-maps {
     display: flex;
     justify-content: space-evenly;
