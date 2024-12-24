@@ -110,6 +110,7 @@ nav .keranjang {
     color: #fff;
     padding: 10px 20px;
     border: none;
+    width: fit-content;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -129,6 +130,11 @@ nav .keranjang {
     width: 680px;
     height: 90vh;
     position: relative;
+}
+.hero-section .hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .box-gambar .heroImg1 {
     position: absolute;

@@ -34,10 +34,20 @@
     position: fixed;
     bottom: 1em;
     right: 3em;
-    width: 6em;
+    width: 4em;
+    animation: bounce 3s ease infinite;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    -webkit-animation: bounce 3s ease infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
 }
