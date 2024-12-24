@@ -198,7 +198,7 @@ checkout.innerHTML = `
             <label for="alamat-pengiriman">Alamat Pengiriman :</label>
             <textarea id="alamat-pengiriman" name="alamat-pengiriman" required></textarea>
             <label for="metode-pembayaran">Metode Pembayaran :</label>
-            <select id="metode-pembayaran">
+            <select id="metode-pembayaran" required>
                 <option value="">-- pilih metode pembayaran</option>
                 <option value="QRIS">QRIS</option>
                 <option value="COD">COD</option>
@@ -258,6 +258,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }</p>
             </div>
             <button type="submit" class="konfirmasi-wa"><a href="https://wa.me/082216555303">Konfirmasi via Whatsapp</a></button>
+            <br><br>
+            <a href="index.html" class="back-to-home">Back to Home</a>
         `;
     });
 });

@@ -517,3 +517,11 @@ section .title {
 #isi-keranjang .detail-penerima {
     text-align: left;
 }
+
+.back-to-home {
+    padding: 5px;
+    margin-top: 1em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #fff;
+}
