@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (currentHeight === "0px") {
                 isiKeranjangSection.style.height = "110vh";
-                isiKeranjangSection.style.padding = "20px";
+                isiKeranjangSection.style.padding = "20px 0";
             } else {
                 isiKeranjangSection.style.height = "0";
                 isiKeranjangSection.style.padding = "0";
