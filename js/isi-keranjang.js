@@ -27,7 +27,7 @@ function renderIsiKeranjang(dataKeranjang) {
 
     // Jika keranjang kosong
     if (Object.keys(dataKeranjang).length === 0) {
-        listKeranjang.innerHTML = "<p>Keranjang kosong</p>";
+        listKeranjang.innerHTML = "<p>Keranjang kosong</p><p>Jika sudah menambah item, silahkan refresh!</p>";
         return;
     }
 
