@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTotalBelanja(dataKeranjang);
 });
 
+const cloneDataKeranjang =
+    JSON.parse(localStorage.getItem("dataKeranjang")) || {};
+renderIsiKeranjang(cloneDataKeranjang);
+
 // ? Fungsi untuk menampilkan isi keranjang
 function renderIsiKeranjang(dataKeranjang) {
     const listKeranjang = document.querySelector(".list-keranjang");
@@ -27,7 +31,8 @@ function renderIsiKeranjang(dataKeranjang) {
 
     // Jika keranjang kosong
     if (Object.keys(dataKeranjang).length === 0) {
-        listKeranjang.innerHTML = "<p>Keranjang kosong</p><p>Jika sudah menambah item, silahkan refresh!</p>";
+        listKeranjang.innerHTML =
+            "<p>Keranjang kosong</p><p>Jika sudah menambah item, silahkan refresh!</p>";
         return;
     }
 
@@ -56,17 +61,27 @@ function renderIsiKeranjang(dataKeranjang) {
     });
 
     // Tambahkan event listener untuk tombol + dan -
-    listKeranjang.querySelectorAll(".tambah").forEach((button) =>
-        button.addEventListener("click", (e) => tambahKeKeranjang(e, dataKeranjang))
-    );
-    listKeranjang.querySelectorAll(".kurang").forEach((button) =>
-        button.addEventListener("click", (e) => kurangiDariKeranjang(e, dataKeranjang))
-    );
+    listKeranjang
+        .querySelectorAll(".tambah")
+        .forEach((button) =>
+            button.addEventListener("click", (e) =>
+                tambahKeKeranjang(e, dataKeranjang)
+            )
+        );
+    listKeranjang
+        .querySelectorAll(".kurang")
+        .forEach((button) =>
+            button.addEventListener("click", (e) =>
+                kurangiDariKeranjang(e, dataKeranjang)
+            )
+        );
 }
 
 // ? Fungsi untuk menambah item ke keranjang
 function tambahKeKeranjang(e, dataKeranjang) {
-    const namaMenu = e.target.closest(".item-keranjang").querySelector("h3").textContent;
+    const namaMenu = e.target
+        .closest(".item-keranjang")
+        .querySelector("h3").textContent;
     const food = japaneseFoodList.find((food) => food.nama === namaMenu);
 
     if (!food) return;
@@ -85,7 +100,9 @@ function tambahKeKeranjang(e, dataKeranjang) {
 
 // ? Fungsi untuk mengurangi item dari keranjang
 function kurangiDariKeranjang(e, dataKeranjang) {
-    const namaMenu = e.target.closest(".item-keranjang").querySelector("h3").textContent;
+    const namaMenu = e.target
+        .closest(".item-keranjang")
+        .querySelector("h3").textContent;
 
     if (dataKeranjang[namaMenu]) {
         dataKeranjang[namaMenu].qty -= 1;
@@ -160,13 +177,14 @@ function renderTotalBelanja(dataKeranjang) {
             </tbody>
         </table>
         <div class="total-keseluruhan">
-            <strong>Total Keseluruhan:</strong> Rp${totalKeseluruhan.toLocaleString("id-ID")}
+            <strong>Total Keseluruhan:</strong> Rp${totalKeseluruhan.toLocaleString(
+                "id-ID"
+            )}
         </div>
     `;
 
     totalBelanjaContainer.innerHTML = htmlContent;
 }
-
 
 // ? Menampilkan form data penerima dan checkout
 const checkout = document.querySelector(".checkout");
@@ -189,7 +207,6 @@ checkout.innerHTML = `
         </form>
     `;
 
-
 // ? Menyimpan dan menampilkan data penerima
 // Tunggu hingga DOM siap
 document.addEventListener("DOMContentLoaded", () => {
@@ -202,8 +219,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Ambil nilai dari input
         const namaPenerima = document.getElementById("nama-penerima").value;
         const nomorTelepon = document.getElementById("nomor-telepon").value;
-        const alamatPengiriman = document.getElementById("alamat-pengiriman").value;
-        const metodePembayaran = document.getElementById("metode-pembayaran").value;
+        const alamatPengiriman =
+            document.getElementById("alamat-pengiriman").value;
+        const metodePembayaran =
+            document.getElementById("metode-pembayaran").value;
 
         // Simpan data dalam variabel
         const dataPenerima = {
@@ -217,23 +236,31 @@ document.addEventListener("DOMContentLoaded", () => {
         listKeranjang.style.display = "none";
 
         // Tampilkan data menggunakan innerHTML
-        const container = document.querySelector(".form-pembayaran").parentElement;
+        const container =
+            document.querySelector(".form-pembayaran").parentElement;
         container.innerHTML = `
             <p>Silahkan scan dan screenshot bukti pembayaran anda</p>
             <img src="../images/qris.jpeg" alt="qris" class="qris">
             <hr>
             <h2>Data Penerima</h2>
             <div class="detail-penerima">
-                <p><strong>Nama Penerima:</strong> ${dataPenerima.namaPenerima}</p>
-                <p><strong>Nomor Telepon:</strong> ${dataPenerima.nomorTelepon}</p>
-                <p><strong>Alamat Pengiriman:</strong> ${dataPenerima.alamatPengiriman}</p>
-                <p><strong>Metode Pembayaran:</strong> ${dataPenerima.metodePembayaran || "Belum dipilih"}</p>
+                <p><strong>Nama Penerima:</strong> ${
+                    dataPenerima.namaPenerima
+                }</p>
+                <p><strong>Nomor Telepon:</strong> ${
+                    dataPenerima.nomorTelepon
+                }</p>
+                <p><strong>Alamat Pengiriman:</strong> ${
+                    dataPenerima.alamatPengiriman
+                }</p>
+                <p><strong>Metode Pembayaran:</strong> ${
+                    dataPenerima.metodePembayaran || "Belum dipilih"
+                }</p>
             </div>
             <button type="submit" class="konfirmasi-wa"><a href="https://wa.me/082216555303">Konfirmasi via Whatsapp</a></button>
         `;
     });
 });
-
 
 // ? Fungsi untuk mengatur height isi keranjang ketika keranjang di klik
 document.addEventListener("DOMContentLoaded", () => {
@@ -242,7 +269,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (keranjangBtn && isiKeranjangSection) {
         keranjangBtn.addEventListener("click", () => {
-            const currentHeight = window.getComputedStyle(isiKeranjangSection).height;
+            const currentHeight =
+                window.getComputedStyle(isiKeranjangSection).height;
 
             if (currentHeight === "0px") {
                 isiKeranjangSection.style.height = "110vh";
@@ -251,6 +279,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 isiKeranjangSection.style.height = "0";
                 isiKeranjangSection.style.padding = "0";
             }
+
+            // ? Ambil daftar makanan dan qty dari localStorage
+            const dataKeranjang =
+                JSON.parse(localStorage.getItem("dataKeranjang")) || {};
+
+            // ? Tampilkan total jumlah item di keranjang
+            updateTotalQty(dataKeranjang);
+
+            // ? Render isi keranjang
+            renderIsiKeranjang(dataKeranjang);
+
+            // ? Render total belanjak
+            renderTotalBelanja(dataKeranjang);
         });
     } else {
         console.error(
