@@ -525,3 +525,7 @@ section .title {
     text-underline-offset: 5px;
     color: #fff;
 }
+
+button {
+    cursor: pointer;
+}
