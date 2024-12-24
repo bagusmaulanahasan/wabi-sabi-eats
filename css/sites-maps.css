@@ -30,9 +30,13 @@
     text-align: left;
 }
 
+#anchor {
+    background-color: rebeccapurple;
+}
 #anchor img{
     position: fixed;
     bottom: 1em;
+    padding: 1em;
     right: 3em;
     width: 4em;
     animation: bounce 3s ease infinite;
@@ -42,6 +46,9 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     -webkit-animation: bounce 3s ease infinite;
+}
+#anchor img:hover {
+    scale: 1.2; 
 }
 @keyframes bounce {
     0%, 100% {
